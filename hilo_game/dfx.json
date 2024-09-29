@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hilo_game_backend": {
+      "main": "src/hilo_game_backend/main.mo",
+      "type": "motoko"
+    },
+    "hilo_game_frontend": {
+      "dependencies": [
+        "hilo_game_backend"
+      ],
+      "source": [
+        "src/hilo_game_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hilo_game_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
